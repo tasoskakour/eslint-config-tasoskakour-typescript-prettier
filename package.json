@@ -1,0 +1,68 @@
+{
+	"name": "eslint-config-tasoskakour-typescript-prettier",
+	"version": "1.0.0",
+	"description": "ESLint shareable config for tasoskakour's coding style",
+	"keywords": [
+		"eslint",
+		"eslintrc",
+		"eslintconfig",
+		"config",
+		"tasoskakour",
+		"styleguide",
+		"react"
+	],
+	"homepage": "https://github.com/tasoskakour/eslint-config-tasoskakour-typescript-prettier#readme",
+	"bugs": {
+		"url": "https://github.com/tasoskakour/eslint-config-tasoskakour-typescript-prettier/issues"
+	},
+	"repository": "github:tasoskakour/eslint-config-tasoskakour-typescript-prettier",
+	"license": "MIT",
+	"author": {
+		"name": "Tasos Kakouris",
+		"email": "tasoskakour@gmail.com",
+		"url": "https://tasoskakour.com"
+	},
+	"main": "index.js",
+	"files": [
+		"index.js",
+		"with-react.js",
+		"lib"
+	],
+	"scripts": {
+		"lint": "eslint . --cache",
+		"test": "npm run lint && ava -v"
+	},
+	"dependencies": {
+		"eslint-config-airbnb": "^18.2.1"
+	},
+	"devDependencies": {
+		"ava": "^3.15.0"
+	},
+	"peerDependencies": {
+		"@typescript-eslint/eslint-plugin": "^4.22.1",
+		"@typescript-eslint/parser": "^4.22.1",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint": "^7.25.0",
+		"eslint-plugin-import": "^2.22.1",
+		"eslint-plugin-jsx-a11y": "^6.4.1",
+		"eslint-plugin-prettier": "^3.4.0",
+		"eslint-plugin-react": "^7.23.2",
+		"eslint-plugin-react-hooks": "^4.2.0",
+		"eslint-import-resolver-typescript": "^2.4.0",
+		"eslint-plugin-unicorn": "^30.0.0"
+	},
+	"peerDependenciesMeta": {
+		"eslint-plugin-jsx-a11y": {
+			"optional": true
+		},
+		"eslint-plugin-react": {
+			"optional": true
+		},
+		"eslint-plugin-react-hooks": {
+			"optional": true
+		}
+	},
+	"engines": {
+		"node": ">=12.0.0"
+	}
+}
