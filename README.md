@@ -59,6 +59,23 @@ Personally I like to use this .eslintignore:
 }
 ```
 
+
+### (Optional) Linting with vscode 
+
+If you are using vscode this `.vscode/settings.json` file may come in handy: 
+
+```
+{
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.formatOnSave": true,
+    "eslint.alwaysShowStatus": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "editor.rulers": [100]
+}
+```
+
 ### TODO
 
 Write better tests
