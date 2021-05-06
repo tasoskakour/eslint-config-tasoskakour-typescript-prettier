@@ -1,11 +1,13 @@
 # eslint-config-tasoskakour-typescript-prettier
 
-> ESLint + Prettier shareable config for [tasoskakour](https://tasoskakour.com)’s coding style
+> ESLint + Prettier Typescript shareable config for [tasoskakour](https://tasoskakour.com)’s coding style
+
+This repo structure is heavily influenced by my buddy's Napoleon repo: [https://github.com/iamnapo/eslint-config-iamnapo](https://github.com/iamnapo/eslint-config-iamnapo)
 
 ## Install
 
 ```console
-$ npm i eslint-config-tasoskakour-typescript eslint eslint-plugin-import eslint-plugin-unicorn eslint-plugin-prettier eslint-import-resolver-typescript @typescript-eslint/eslint-plugin @typescript-eslint/parser -D
+$ npm i eslint-config-tasoskakour-typescript eslint prettier eslint-plugin-import eslint-plugin-unicorn eslint-plugin-prettier eslint-import-resolver-typescript typescript @typescript-eslint/eslint-plugin @typescript-eslint/parser -D
 ```
 
 Then, add this to your `.eslintrc.js`:
@@ -35,3 +37,7 @@ module.exports = {
 	},
 };
 ```
+
+### TODO
+
+Write better tests

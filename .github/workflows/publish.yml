@@ -1,27 +1,24 @@
 name: Publish to GitHub registry
 
 on:
-  release:
-    types: [published]
+  push:
+    tags:
+      - "*"
 
 jobs:
-  publish:
+  publish-npm:
     runs-on: ubuntu-latest
     steps:
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v2
 
-      - name: 🏗 Run replace-in-file
-        run: npx replace-in-file \"eslint-config-tasoskakour-typescript-prettier\" \"@tasoskakour\/eslint-config-tasoskakour-typescript-prettier\" package.json
-
       - name: ⎔ Setup node
         uses: actions/setup-node@v2
         with:
           node-version: 14
-          registry-url: "https://npm.pkg.github.com"
-          scope: "@tasoskakour"
+          registry-url: "https://registry.npmjs.org"
 
-      - name: 🚀 Release
+      - name: 🚀 Publish to NPM
         run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

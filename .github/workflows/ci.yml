@@ -3,7 +3,7 @@ name: ci
 on: push
 
 jobs:
-  ci:
+  test:
     runs-on: ubuntu-latest
     steps:
       - name: ⬇️ Checkout repo
@@ -12,12 +12,12 @@ jobs:
       - name: ⎔ Setup node
         uses: actions/setup-node@v2
         with:
-          node-version: 15
+          node-version: 14
 
       - name: 📥 Download deps
         uses: bahmutov/npm-install@v1
         with:
           useLockFile: false
 
-      # - name: 🧪 Run test script
-      #   run: npm test
+      - name: 🧪 Run test script
+        run: npm test
