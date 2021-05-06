@@ -7,7 +7,7 @@ This repo structure is heavily influenced by my buddy's Napoleon repo: [https://
 ## Install
 
 ```console
-$ npm i eslint-config-tasoskakour-typescript-prettier eslint prettier eslint-plugin-import eslint-plugin-unicorn eslint-plugin-prettier eslint-import-resolver-typescript typescript @typescript-eslint/eslint-plugin @typescript-eslint/parser -D
+npm i eslint-config-tasoskakour-typescript-prettier eslint prettier eslint-plugin-import eslint-plugin-unicorn eslint-plugin-prettier eslint-import-resolver-typescript typescript @typescript-eslint/eslint-plugin @typescript-eslint/parser -D
 ```
 
 Then, add this to your `.eslintrc.js`:
@@ -24,7 +24,7 @@ module.exports = {
 ### With React support
 
 ```console
-$ npx install-peerdeps --dev eslint-config-tasoskakour-typescript-prettier
+npx install-peerdeps --dev eslint-config-tasoskakour-typescript-prettier
 ```
 
 Then, add this to your `.eslintrc.js`:
@@ -36,6 +36,27 @@ module.exports = {
 		// your overrides
 	},
 };
+```
+
+### Add .eslintignore for certain files
+
+Personally I like to use this .eslintignore:
+
+```
+*.css
+*.svg
+```
+
+### (Optional) Add .prettierc.json with my preferred configuration
+
+```
+{
+    "printWidth": 100,
+    "trailingComma": "es5",
+    "tabWidth": 4,
+    "semi": true,
+    "singleQuote": true
+}
 ```
 
 ### TODO
