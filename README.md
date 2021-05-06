@@ -7,7 +7,7 @@ This repo structure is heavily influenced by my buddy's Napoleon repo: [https://
 ## Install
 
 ```console
-$ npm i eslint-config-tasoskakour-typescript eslint prettier eslint-plugin-import eslint-plugin-unicorn eslint-plugin-prettier eslint-import-resolver-typescript typescript @typescript-eslint/eslint-plugin @typescript-eslint/parser -D
+$ npm i eslint-config-tasoskakour-typescript-prettier eslint prettier eslint-plugin-import eslint-plugin-unicorn eslint-plugin-prettier eslint-import-resolver-typescript typescript @typescript-eslint/eslint-plugin @typescript-eslint/parser -D
 ```
 
 Then, add this to your `.eslintrc.js`:
@@ -24,7 +24,7 @@ module.exports = {
 ### With React support
 
 ```console
-$ npx install-peerdeps --dev eslint-config-tasoskakour-typescript
+$ npx install-peerdeps --dev eslint-config-tasoskakour-typescript-prettier
 ```
 
 Then, add this to your `.eslintrc.js`:
