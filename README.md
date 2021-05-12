@@ -7,7 +7,7 @@ This repo structure is heavily influenced by my buddy's Napoleon repo: [https://
 ## Install
 
 ```console
-npm i eslint-config-tasoskakour-typescript-prettier eslint prettier eslint-plugin-import eslint-plugin-unicorn eslint-plugin-prettier eslint-config-prettier eslint-import-resolver-typescript typescript @typescript-eslint/eslint-plugin @typescript-eslint/parser -D
+yarn add -D eslint-config-tasoskakour-typescript-prettier eslint prettier eslint-plugin-import eslint-plugin-unicorn eslint-plugin-prettier eslint-config-prettier eslint-import-resolver-typescript typescript @typescript-eslint/eslint-plugin @typescript-eslint/parser  
 ```
 
 Then, add this to your `.eslintrc.js`:
