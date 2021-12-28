@@ -7,7 +7,7 @@ This repo structure is heavily influenced by my buddy's Napoleon repo: [https://
 ## Install
 
 ```console
-yarn add -D eslint-config-tasoskakour-typescript-prettier eslint prettier eslint-plugin-import eslint-plugin-unicorn eslint-plugin-prettier eslint-config-prettier eslint-import-resolver-typescript typescript @typescript-eslint/eslint-plugin @typescript-eslint/parser  
+yarn add -D eslint-config-tasoskakour-typescript-prettier
 ```
 
 Then, add this to your `.eslintrc.js`:
@@ -75,7 +75,3 @@ If you are using vscode this `.vscode/settings.json` file may come in handy:
     "editor.rulers": [100]
 }
 ```
-
-### TODO
-
-Write better tests
