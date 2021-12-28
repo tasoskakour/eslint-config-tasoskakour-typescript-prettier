@@ -1,9 +1,11 @@
+/* eslint-disable unicorn/prefer-module, @typescript-eslint/no-var-requires */
 const test = require("ava");
 const { ESLint } = require("eslint");
 
-const config = require('../index.js');
+const config = require("../index");
 
-const isObject = (value) => value && typeof value === "object" && value.constructor === Object;
+const isObject = (value) =>
+	value && typeof value === "object" && value.constructor === Object;
 
 test("Basic ESLint Rules", async (t) => {
 	const linter = new ESLint({ overrideConfigFile: "index.js" });
