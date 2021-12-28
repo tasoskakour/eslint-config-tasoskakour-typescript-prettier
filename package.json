@@ -1,6 +1,6 @@
 {
 	"name": "eslint-config-tasoskakour-typescript-prettier",
-	"version": "1.2.13",
+	"version": "2.0.0",
 	"description": "ESLint shareable config for tasoskakour's coding style",
 	"keywords": [
 		"eslint",
@@ -43,7 +43,7 @@
 	},
 	"dependencies": {
 		"@typescript-eslint/eslint-plugin": "^5.8.1",
-		"@typescript-eslint/parser": "^5.8.1",		
+		"@typescript-eslint/parser": "^5.8.1",
 		"eslint-config-airbnb": "^19.0.4",
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-import-resolver-typescript": "^2.5.0",
