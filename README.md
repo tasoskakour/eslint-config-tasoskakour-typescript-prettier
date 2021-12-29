@@ -6,6 +6,8 @@ This repo structure is heavily influenced by my buddy's Napoleon repo: [https://
 
 ## Install
 
+> Make sure you have already installed `eslint` and `typescript` as they are required packages.
+
 ```console
 yarn add -D eslint-config-tasoskakour-typescript-prettier
 ```
@@ -21,13 +23,9 @@ module.exports = {
 };
 ```
 
-### With React support
+### Usage for React 
 
-```console
-npx install-peerdeps --dev eslint-config-tasoskakour-typescript-prettier
-```
-
-Then, add this to your `.eslintrc.js`:
+Adjust your `.eslintrc.js` like this:
 
 ```js
 module.exports = {
