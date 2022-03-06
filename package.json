@@ -1,7 +1,7 @@
 {
 	"name": "eslint-config-tasoskakour-typescript-prettier",
 	"version": "2.0.4",
-	"description": "ESLint shareable config for tasoskakour's coding style",
+	"description": "ESLint shareable config for tasoskakour's coding style.",
 	"keywords": [
 		"eslint",
 		"eslintrc",
