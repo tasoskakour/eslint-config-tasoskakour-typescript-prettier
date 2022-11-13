@@ -1,6 +1,6 @@
 {
 	"name": "eslint-config-tasoskakour-typescript-prettier",
-	"version": "2.0.5",
+	"version": "2.0.6",
 	"description": "ESLint shareable config for tasoskakour's coding style.",
 	"keywords": [
 		"eslint",
