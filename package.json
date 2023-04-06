@@ -33,27 +33,27 @@
 		"test": "ava -v"
 	},
 	"devDependencies": {
-		"ava": "^5.0.1",
-		"eslint": "^8.27.0",
-		"typescript": "^4.8.4"
+		"ava": "^5.2.0",
+		"eslint": "^8.37.0",
+		"typescript": "^5.0.3"
 	},
 	"peerDependencies": {
 		"eslint": "^8.0.0",
-		"typescript": "^4.0.0"
+		"typescript": "^5.0.0"
 	},
 	"dependencies": {
-		"@typescript-eslint/eslint-plugin": "^5.42.1",
-		"@typescript-eslint/parser": "^5.42.1",
+		"@typescript-eslint/eslint-plugin": "^5.57.1",
+		"@typescript-eslint/parser": "^5.57.1",
 		"eslint-config-airbnb": "^19.0.4",
-		"eslint-config-prettier": "^8.5.0",
-		"eslint-import-resolver-typescript": "^3.5.2",
-		"eslint-plugin-import": "^2.26.0",
-		"eslint-plugin-jsx-a11y": "^6.6.1",
+		"eslint-config-prettier": "^8.8.0",
+		"eslint-import-resolver-typescript": "^3.5.5",
+		"eslint-plugin-import": "^2.27.5",
+		"eslint-plugin-jsx-a11y": "^6.7.1",
 		"eslint-plugin-prettier": "^4.2.1",
-		"eslint-plugin-react": "^7.31.10",
+		"eslint-plugin-react": "^7.32.2",
 		"eslint-plugin-react-hooks": "^4.6.0",
-		"eslint-plugin-unicorn": "^44.0.2",
-		"prettier": "^2.7.1"
+		"eslint-plugin-unicorn": "^46.0.0",
+		"prettier": "^2.8.7"
 	},
 	"engines": {
 		"node": ">=14.0.0"
