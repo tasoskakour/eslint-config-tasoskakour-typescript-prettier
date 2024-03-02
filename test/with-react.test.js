@@ -1,4 +1,4 @@
-/* eslint-disable unicorn/prefer-module, @typescript-eslint/no-var-requires */
+/* eslint-disable unicorn/prefer-module, @typescript-eslint/no-var-requires, unicorn/prefer-string-replace-all */
 const test = require("ava");
 const { ESLint } = require("eslint");
 
@@ -10,15 +10,26 @@ const isObject = (value) =>
 test("Basic ESLint Rules", async (t) => {
 	const linter = new ESLint({ overrideConfigFile: "with-react.js" });
 	const code = `
-    import ReactDOM from "react-dom";
+    import {createRoot} from "react-dom/client";
 
-	const element = <h1>Hello, world</h1>;
-	ReactDOM.render(element, document.querySelector("#root"));
+	const container = document.getElementById("app");
+	const root = createRoot(container);
+	root.render(<div>Hello world</div>);
 	`.replace(/\t*/g, "");
 	const [{ errorCount, messages }] = await linter.lintText(code);
-	t.is(errorCount, 2);
-	t.is(messages[0].message, "Delete `⏎····`");
-	t.is(messages[1].message, "Unable to resolve path to module 'react-dom'.");
+	t.is(errorCount, 3);
+	t.is(
+		messages[0].message,
+		"Replace `⏎····import·{createRoot` with `import·{·createRoot·`",
+	);
+	t.is(
+		messages[1].message,
+		"Unable to resolve path to module 'react-dom/client'.",
+	);
+	t.is(
+		messages[2].message,
+		"Prefer `.querySelector()` over `.getElementById()`.",
+	);
 });
 
 test("Basic config structure", (t) => {
