@@ -1,4 +1,4 @@
-/* eslint-disable unicorn/prefer-module, @typescript-eslint/no-var-requires */
+/* eslint-disable unicorn/prefer-module, @typescript-eslint/no-var-requires, unicorn/prefer-string-replace-all */
 const test = require("ava");
 const { ESLint } = require("eslint");
 
