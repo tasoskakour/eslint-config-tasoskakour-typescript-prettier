@@ -45,7 +45,7 @@ Personally I like to use this .eslintignore:
 *.svg
 ```
 
-### (Optional) Add .prettierc.json with my preferred configuration
+### (Optional) Add .prettierrc.json with my preferred configuration
 
 ```
 {
